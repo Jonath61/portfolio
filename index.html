@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,0,0,0&icon_names=mail" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,0,0,0&icon_names=menu" />
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
 </head>
 <body>
 <header>
     <div class="boxed">
         <div class="flex aligncenter space-between">
+            <button class="header-menu-mobile">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
             <a href="/" class="header-logo">
                 <img src="img/html-logo.png">
             </a>
@@ -35,11 +39,11 @@
 
     <div class="section">
         <div class="boxed">
-            <div class="flex">
-                <div class="w40">
+            <div class="flex toColumn mCenter">
+                <div class="w40 wm100">
                     <h2>A propos de moi</h2>
                 </div>
-                <div class="w60">
+                <div class="w60 wm100">
                     <p>Je me suis lancé dans le dev web par envie d'apprendre et participer à l'avenir de ce dernier. Je possède des amis et de la famille familiarisé dans le langague informatique et qui peuvent eux même me conseiller. Je suis aussi passionné de jeu vidéo. Plus précisement, j'aime beaucoup l'univers qu'ils peuvent instaurer ou les moments plus comique qui peuvent subvenir. J'aime bien aussi les défis, qu'ils soit dans les jeux ou la vrais vie. C'est aussi pour ce défi que je me suis lancé et j'estime que mes capacitées d'adaptations me permettrons de me dépasser et de pouvoir vivre de ce monde en constante évolution.</p>
                 </div>
             </div>
@@ -49,20 +53,20 @@
     <div class="section dark">
         <div class="boxed text-center">
             <h2>Découvrez mes compétences</h2>
-            <div class="flex gap20">
-                <div class="w25 skill">
+            <div class="flex gap20 toColumn">
+                <div class="w25 wm100 skill">
                     <img src="img/html-logo.png">
                     <h3>HTML</h3>
                 </div>
-                <div class="w25 skill">
+                <div class="w25 wm100 skill">
                     <img src="img/css-logo.png">
                     <h3>CSS</h3>
                 </div>
-                <div class="w25 skill">
+                <div class="w25 wm100 skill">
                     <img src="img/js-logo.png">
                     <h3>JavaScript</h3>
                 </div>
-                <div class="w25 skill">
+                <div class="w25 wm100 skill">
                     <img src="img/symfony-logo.png">
                     <h3>Symfony</h3>
                 </div>
@@ -74,7 +78,7 @@
         <div class="boxed text-center">
             <h2>Mes réalisations</h2>
             <div class="flex wrap gap20 space-between">
-                <div class="w32 realisation">
+                <div class="w32 wm47 realisation">
                     <a href="https://github.com/Jonath61/calculatrice">
                         <img src="img/calculatrice.png">
                         <h3>Calculatrice</h3>
@@ -87,9 +91,9 @@
     <div class="section dark">
         <div class="boxed text-center">
             <h2>Contactez-moi</h2>
-            <div class="flex space-between">
-                <div class="w32 contact">
-                    <span class="material-symbols-outlined icon">mail</span>
+            <div class="flex space-between toColumn mgap20">
+                <div class="w32 wm100 contact">
+                    <span class="material-symbols-outlined">mail</span>
                     <span class="label">E-mail</span>
                     <span class="value">jonath.even@gmail.com</span>
                 </div>
