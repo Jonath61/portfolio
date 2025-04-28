@@ -265,6 +265,10 @@ header{
         display: none;
     }
 
+    .active{
+        display: flex;
+    }
+
     .header-menu li:last-child a{
         margin-top: 10px;
     }
@@ -277,6 +281,7 @@ header{
         left: 5%;
         top: 50%;
         transform: translateY(-50%);
+        z-index: 991;
     }
 
     .slider{
