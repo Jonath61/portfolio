@@ -26,3 +26,26 @@ document.querySelectorAll(".close-menu-btn").forEach(btn => {
         closeMenu();
     });
 });
+
+const modal = document.getElementById("videoModal");
+const openBtn = document.getElementById("openModal");
+const closeBtn = modal.querySelector(".close");
+const video = document.getElementById("videoFrame");
+
+openBtn.onclick = () => {
+  modal.style.display = "flex";
+  video.currentTime = 0;
+  video.play();
+};
+
+closeBtn.onclick = () => {
+  modal.style.display = "none";
+  video.pause();
+};
+
+window.onclick = (event) => {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    video.pause();
+  }
+};
