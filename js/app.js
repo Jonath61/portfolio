@@ -1,7 +1,7 @@
-const openMenu = () => {
-    const menu = document.querySelector(".header-menu");
-    const icon = document.querySelector("header .material-symbols-outlined");
+const menu = document.querySelector(".header-menu");
+const icon = document.querySelector("header .material-symbols-outlined");
 
+const openMenu = () => {
     menu.classList.toggle("active");
 
     if (menu.classList.contains("active")) {
@@ -13,8 +13,6 @@ const openMenu = () => {
 
 // Fonction pour fermer le menu
 const closeMenu = () => {
-    const menu = document.querySelector(".header-menu");
-    const icon = document.querySelector("header .material-symbols-outlined");
 
     if (menu.classList.contains("active")) {
         menu.classList.remove("active");
