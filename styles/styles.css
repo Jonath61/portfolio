@@ -13,7 +13,7 @@ body{
     width: 100%;
     min-height: 80vh;
     aspect-ratio: 16/9;
-    background: #000;
+    background: #292929;
     position: relative;
 }
 
@@ -33,7 +33,7 @@ body{
 }
 
 h1{
-    color: white;
+    color: #F5F5F5;
     font-size: 5rem;
 }
 
@@ -48,7 +48,7 @@ p{
 }
 
 .slider-content p{
-    color: #fff;
+    color: #F5F5F5;
     font-size: 2rem;
     font-weight: 300;
 }
@@ -67,8 +67,8 @@ p{
 }
 
 .dark{
-    background: #000;
-    color: #fff;
+    background: #292929;
+    color: #F5F5F5;
 }
 
 .w40{
@@ -133,7 +133,7 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: none;
-    color: #fff;
+    color: #F5F5F5;
     font-size: 2rem;
     width: max-content;
     opacity: 0;
@@ -181,7 +181,7 @@ p{
 }
 
 .contact{
-    border: 2px dashed #fff;
+    border: 2px dashed #F5F5F5;
     border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
@@ -196,10 +196,10 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background: #fff;
+    background: #F5F5F5;
     z-index: 999;
     padding-block: 10px;
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.07);
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
 }
 
 .header-logo{
@@ -218,7 +218,7 @@ header{
 
 .header-menu li a{
     text-decoration: none;
-    color: #000;
+    color: #292929;
     padding: 10px 20px;
     display: block;
     box-sizing: border-box;
@@ -226,12 +226,12 @@ header{
 }
 
 .header-menu li a:hover{
-    background: #f2f2f2;
+    background: #bdbdbd;
 }
 
 .header-menu li:last-child a{
     background: #f06423;
-    color: #fff;
+    color: #F5F5F5;
 }
 
 .header-menu-mobile{
@@ -257,7 +257,7 @@ header{
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: #fff;
+        background-color: #F5F5F5;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -276,7 +276,7 @@ header{
     .header-menu-mobile{
         display: block;
         border: 0px;
-        background-color: #fff;
+        background-color: #F5F5F5;
         position: absolute;
         left: 5%;
         top: 50%;
