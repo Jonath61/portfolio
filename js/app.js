@@ -1,10 +1,30 @@
 const openMenu = () => {
     const menu = document.querySelector(".header-menu");
+    const icon = document.querySelector("header .material-symbols-outlined");
+
     menu.classList.toggle("active");
-    if(menu.classList.contains("active")){
-        document.querySelector("header .material-symbols-outlined").innerHTML = "close"
+
+    if (menu.classList.contains("active")) {
+        icon.innerHTML = "close";
+    } else {
+        icon.innerHTML = "menu";
     }
-    else{
-        document.querySelector("header .material-symbols-outlined").innerHTML = "menu"
+};
+
+// Fonction pour fermer le menu
+const closeMenu = () => {
+    const menu = document.querySelector(".header-menu");
+    const icon = document.querySelector("header .material-symbols-outlined");
+
+    if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+        icon.innerHTML = "menu";
     }
-}
+};
+
+// Ajoute un écouteur sur tous les boutons qui doivent fermer le menu
+document.querySelectorAll(".close-menu-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        closeMenu();
+    });
+});
